@@ -15,14 +15,11 @@ public class Book {
 		/* construct the object with an array of chapter names */
 		/* ADD YOUR CODE HERE */
 		
-		chapters = new String[DEFAULT_CHAPTERS];
+		chapters = new String[argument.length];
 		
 		int i=0;
 		while (i < argument.length) 
 			chapters[i] = new String(argument[i++]);
-		
-		while (i < chapters.length)
-			chapters[i++] = "n/a";
 	}
 	
 	public String getChapters(int i) {
